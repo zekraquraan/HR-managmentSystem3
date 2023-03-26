@@ -1,0 +1,105 @@
+header{
+
+     
+
+top: 0;
+left: 0;
+right: 0;
+width: 100%;
+
+height: 200px;
+
+
+}
+
+
+body{
+
+    background-color: #f1edf0cc;
+}
+#links{
+   
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    
+    
+    }
+
+    hr{
+        width:300px;
+       
+       
+       }
+       
+       #footline{
+       
+           width: 100%;
+         
+       
+       height: 2px;
+       
+       background-color:rgb(208, 68, 154) ;
+       }
+       #coptright{
+       
+           display: flex;
+       
+           justify-content: center ;
+       }
+       
+       #twitter1,#whatss1{
+           float:right;
+       
+       }
+
+       footer{
+        margin-bottom: 0px;
+
+       }
+
+       table{
+        display: inline-block;
+        width: 700px;
+        border-collapse:collapse ;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+margin-top: 100px;
+margin-left: 100px;
+margin-bottom: 300px;
+
+
+       }
+
+       td, th   { border: 1px solid rgb(8, 7, 8);
+padding: 20px;
+       }
+
+       th{
+        font-weight: bold;
+       }
+       #tablediv{
+        width: 800px;
+        height: 500px;
+        
+
+        
+       }
+
+       #vline{
+        display: inline-block;
+    
+    
+     width: 50px;
+     height: 320px;
+     background-color: rgb(90, 20, 63);
+     border-radius:20px;
+     
+        margin-left: -30px;
+    margin-bottom: 300px;
+    }

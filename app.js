@@ -202,3 +202,49 @@ Hadi.render();
 Lana.render();
 
 Tamara.render();
+
+function addNewEmployee(event) {
+  event.preventDefault();
+  let fullName = event.target.fullName.value;
+  let department = event.target.department.value;
+  let level = event.target.level.value;
+  let imgURL = event.target.imgURL.value;
+
+  let newEmployee = new Employee(fullName, department, level, imgURL);
+
+  let jsonArr = JSON.stringify(all);
+  localStorage.setItem('allEmployees', jsonArr);
+
+  
+  render();
+
+}
+function getEmployees() {
+  let jsonArr = localStorage.getItem('allEmployees');
+  all = JSON.parse(jsonArr);
+}
+
+
+render();
+function saveData(data){
+  let stringArr=JSON.stringify(data);
+  localStorage.setItem('Employee',stringArr);
+  
+}
+
+function getData(){
+  let retriveArr=localStorage.getItem('Employee');
+  let objArr=JSON.parse(retriveArr);
+  console.log("after gitting from LS",objArr);
+  if( objArr !==null ){
+      allEmployee=[];
+      for(let i=0;i<objArr.length;i++){
+          new Employee(objArr[i].employeeId ,objArr[i].fullName,
+           objArr[i].department ,objArr[i].level, objArr[i].imageUrl ,objArr[i].salary)
+       }
+  }
+  
+}
+getData();  
+allEmployeeCaller(allEmployee);
+console.log(all);

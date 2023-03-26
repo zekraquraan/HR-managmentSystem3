@@ -163,3 +163,17 @@ header{
     float:right;
   
   }
+    
+table{
+  border: 3px solid green;
+}
+  th{
+      border: 2px solid green;
+      padding: 20px;
+      background-color: rgb(246, 179, 45);
+  }td {
+    border: 2px solid green;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(115, 142, 58);
+}
